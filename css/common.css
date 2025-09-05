@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body {font-family: 'Pretendard';}
+.container {width: 1200px; height: 100%; 
+    margin: 0 auto; background-color: gray;}
+
+    /* header */
+header {width: 100%; height: 245px; background-color: gold;}
+.header_a{width: 100%; height: 45px;
+    background-color: blueviolet;}
+    .header_a  .container { display: flex;
+  align-items: center; justify-content:space-between; background-color: pink;}
+    .lang {width:100px; height: 45px; background-color: skyblue;}
+.mypage {width: 250px; height: 45px;
+    background-color: red;}
+
+header > .container {height:145px; display:flex; justify-content: space-between; align-items: center;}
+.search {width: 300px; height: 50px; display: flex; justify-content:right; align-items: center;
+        background-color: plum;}
+.logo {width: 300px; height: 75px; align-items: center; font-size: 40px;
+    background-color: green;}
+.h_right {width: 300px; height: 70px; 
+          background-color: yellow;}
+
+
+
+.header_b {width: 100%; height: 55px; display: flex; justify-content: space-between;
+    background-color: skyblue;}
+.menu {width: 300px; height: 300px; background-color: wheat;}
+.header_b nav{width: 1920px; height: 55px;}
+header ul{display: flex; justify-content: space-evenly;}
+
+
+.top {width: 1200px; height: 100px; margin: 0 auto; background-color: deeppink;}
+/* footer */
+footer {width: 100%; height: 475px; background-color: orange;}
