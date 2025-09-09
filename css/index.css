@@ -28,3 +28,7 @@ background-color: chartreuse;
       object-fit: cover;
     }
     .new {width: 1120px; height: 500px; margin: 0 auto;}
+
+    .new .tabbar {height: 10%;}
+
+    .new .swiper {height: 90%;}

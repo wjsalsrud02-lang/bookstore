@@ -23,35 +23,103 @@ a {text-decoration: none; color: #333;}
 
 body {font-family: 'Pretendard';}
 .container {width: 1200px; height: 100%; 
-    margin: 0 auto; background-color: gray;}
+    margin: 0 auto;}
 
     /* header */
-header {width: 100%; height: 245px; background-color: gold;}
-.header_a{width: 100%; height: 45px;
-    background-color: blueviolet;}
+header {width: 100%; height: 245px; }
+.header_a{width: 100%; height: 45px; color: #fff;
+    background-color: #333333;}
     .header_a  .container { display: flex;
-  align-items: center; justify-content:space-between; background-color: pink;}
-    .lang {width:100px; height: 45px; background-color: skyblue;}
-.mypage {width: 250px; height: 45px;
-    background-color: red;}
+  align-items: center; justify-content:space-between;}
+    .lang {width:100px; height: 45px; display: flex; justify-content: center; align-items: center;}
+.mypage {width: 25%; height: 45px;}
+    .mypage ul {height: 100%; display:flex; justify-content: space-between; align-items: center;}
+    .mypage a {color: #fff; font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s; font-family: 'Open Sans', sans-serif;}
+
 
 header > .container {height:145px; display:flex; justify-content: space-between; align-items: center;}
 .search {width: 300px; height: 50px; display: flex; justify-content:right; align-items: center;
         background-color: plum;}
-.logo {width: 300px; height: 75px; align-items: center; font-size: 40px;
-    background-color: green;}
+.logo {width: 300px; height: 75px; align-items: center; font-size: 40px; display: flex; justify-content: center; align-items: center;}
 .h_right {width: 300px; height: 70px; 
           background-color: yellow;}
 
 
 
-.header_b {width: 100%; height: 55px; display: flex; justify-content: space-between;
-    background-color: skyblue;}
-.menu {width: 300px; height: 300px; background-color: wheat;}
-.header_b nav{width: 1920px; height: 55px;}
-header ul{display: flex; justify-content: space-evenly;}
+.header_b {width: 100%; height: 55px; display: flex; position:fixed; justify-content: center; align-items: center;
+    background-color: #22aeac; font-weight: bolder;}
+.header_b nav{width: 1200px;}
+header ul{ display: flex; justify-content: space-evenly;}
+.header_b a {color: #fff; font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s; font-family: 'Open Sans', sans-serif;}
 
 
-.top {width: 1200px; height: 100px; margin: 0 auto; background-color: deeppink;}
+.top {width: 1200px; height: 100px; margin: 0 auto; display: flex;
+     background-color: deeppink;}
+.top nav {width: 1200px;}
+.top ul{display: flex; justify-content: space-evenly;}
+
+.par {width: 100%; height: 250px;  background-color: palegreen}
+.par div {width: 1200px; height: 250px; margin:0 auto;text-align: center; justify-content: center;
+   background-color: bisque;}
+
+.banner {width: 1200px; height: 145px; margin:0 auto ; margin-top: 80px;}
+
+.sel {width: 100%; height: 580px; display: flex; margin: 80px 0; justify-content: center; gap: 15px; background-color: aqua;}
+.sel_a {width: 385px; height: 580px; background-color: red;}
+.sel_b {width: 385px; height: 580px; background-color: orange;}
+.sel_c {width: 385px; height: 580px; background-color: yellow;}
+
+.feature{width: 1200px; height: 195px; margin: 0 auto; display: flex; justify-content: center; align-items: center; 
+  font-size: 32px; font-weight: 700; line-height: 30px; font-family: 'Rufina', serif;}
+
+.books {width: 1200px; height: 390px; margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;          /* 여러 줄로 배치 */
+  justify-content: center;  /* 가운데 정렬 */
+  gap: 30px 20px;           /* row-gap:30px, column-gap:20px */ background-color: purple;}
+  
+.box {width: 285px; height:130px;
+  align-items: center;
+  justify-content: center; background-color: hotpink;}
+
+.sel_2 {width: 100%; height: 590px; display: flex; margin-bottom: 80px; justify-content: center; align-items: center; background-color: #22aeac;}
+.sel_d {width: 590px; height: 420px; }
+.sel_e {width: 590px; height: 420px;}
+
+.books_2 {width: 1200px; height: 390px; margin: 0 auto; display: flex;
+  flex-wrap: wrap;          /* 여러 줄로 배치 */
+  justify-content: center;  /* 가운데 정렬 */
+  gap: 0 20px;           /* row-gap:30px, column-gap:20px */
+  background-color: coral;}
+.box2 {width: 285px; height: 130px; grid-template-columns: repeat(4, 1fr); /* 4열 */
+  grid-template-rows: repeat(3, auto);  /* 3행 */
+  background-color: hotpink;}
+
+.banner_2 {width: 100%; height: 455px; background-color: darkgray;}
+.blogsub {width: 1200px; height: 170px; background-color: blueviolet;}
+.blog {width: 100%; height: 785px; display: flex; justify-content: center; align-items: center; gap: 10px; background-color: yellow;}
+.box_3 {width: 390px; height: 460px; background-color: chocolate;}
+
+.sns {width: 1200px; height: 250px; background-color: cadetblue; display: flex; margin: 0 auto;}
+
 /* footer */
-footer {width: 100%; height: 475px; background-color: orange;}
+footer {width: 100%; height: 475px; background-color: #333;}
+.row {width: 50%; height: 60px; background-color: #333 }
+footer ul{height: 100%; display:flex; justify-content: space-between; align-items: center;}
+.row a {color: #fff; font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s; font-family: 'Open Sans', sans-serif;}
+
+
+.footer_mid {width: 100%; height:310px; background-color: palevioletred; display: flex; justify-content: center; align-items: center;}
+.footer_mid div {width:300px; height: 310px;
+  background-color:  chartreuse;}
+.footer_fin{width: 1200px; height: 105px; display: flex; justify-content: space-between; align-items: center; background-color: #22aeac;}
+
