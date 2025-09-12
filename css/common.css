@@ -98,6 +98,9 @@ font-family: 'Rufina', serif;
 }
 
 
+.mypage ul li a:hover {
+  color: #22aeac;}         /* 마우스를 올렸을 때 글자 색 */
+
 header>.container {
   height: 145px;
   display: flex;
@@ -108,18 +111,21 @@ header>.container {
 .search {
   width: 300px;
   height: 50px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: inline-block;
+  /* justify-content: left;
+  align-items: center; */
+  position: relative;
 }
 
 .search button {
-  background-color: #22aeac;
-  color: white;
+  border-radius: 5px;
+  position: absolute;
+  transform: translateY(10%); right: 50px;
   border: none;
-  padding: 17.5px 17.5px;
+background-color:#EDEDED ;
   cursor: pointer;
-  font-size: 18px;
+height: 43px;
+padding-right: 5px;
 }
 
 .logo {
@@ -186,20 +192,13 @@ header ul { width: 60%;
   height: 100px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: deeppink;
 }
+.top img{margin-top: 10px; margin-right: 20px;}
 
-.top nav {
-  width: 1200px; background-color:palegoldenrod ;
-}
-
-.top ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
+.top_main {width:400px; display: flex;}
+.top_sub {float: right;}
 
 .par div {
   width: 1200px;
@@ -226,7 +225,9 @@ header ul { width: 60%;
   height: 145px;
   margin: 0 auto;
   margin-top: 80px;
-  background-color: chartreuse;
+  background: url("//koparion.myshopify.com/cdn/shop/files/5.jpg?v=1613706498") no-repeat center/cover;
+  display: flex;
+  align-items: center;
 }
 
 .sel {
@@ -375,10 +376,10 @@ header ul { width: 60%;
 .sns .container {width: 1200px; margin: 0 auto; display: flex; align-items: center; font-family: 'Rufina', serif;}
 
 .sns_a {width: 600px;height:140px; color: #333333;}
-.sns_a div {width: 600px;margin-top: 40px; display: flex;}
+.sns_a div {width: 600px;margin-top: 30px; display: flex;}
 .sns_b {width: 600px; height:140px; color: #333333;}
 
-.sns ul{ display: flex; justify-content: space-evenly; margin-top: 60px;}
+.sns ul{ display: flex; justify-content: space-evenly; margin-top: 50px;}
 
 /* footer */
 footer {
@@ -400,6 +401,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: color 0.3s;
    li::after {content: "|"; float: right; margin-right: -30px; color: #fff;}
 
         li:last-child::after{content: "";}
@@ -413,7 +415,9 @@ footer {
   transition: .3s;
   font-family: 'Open Sans', sans-serif;
 }
-
+.row ul li a:hover {
+  color: #22aeac;         /* 마우스를 올렸을 때 글자 색 */
+}
 
 
 .footer-mid {
@@ -442,6 +446,7 @@ footer {
 
 .footer-column ul li {
   margin-bottom: 20px;
+  transition: color 0.3s;
 }
 
 .footer-column ul li a {
@@ -450,25 +455,28 @@ footer {
 }
 
 .footer-column ul li a:hover {
-  color: #fff;
+  color: #22aeac;
 }
 
 .footer_fin {
-  width: 1200px;
+  width: 100%;
   height: 105px;
   display: flex;
   margin: 0 auto;
-  align-items: center;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  background-color: bisque;
+  
+  
+ 
+  color: #fff;
+  background-color: #333;
 }
+.footer_fin_all {width: 1200px; height: 105px;margin: 0 auto; display: flex; justify-content: space-between;}
+
+.footer_fin_left {height:105px;align-items: center;}
 
 .footer_fin a {
   color: #fff;
 }
 
 .footer_fin_right {
-  width: 250px;
-
+  width: 250px; margin-right: 100px;
 }
