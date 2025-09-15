@@ -237,13 +237,12 @@ header ul { width: 60%;
   margin: 80px 0;
   justify-content: center;
   gap: 15px;
-  background-color: aqua;
 }
 
 .sel_a {
-  width: 385px;
+  width: 770px;
   height: 580px;
-  background-color: red;
+
 }
 
 .sel_b {
@@ -252,11 +251,6 @@ header ul { width: 60%;
   background-color: orange;
 }
 
-.sel_c {
-  width: 385px;
-  height: 580px;
-  background-color: yellow;
-}
 
 .feature {
   width: 1200px;
@@ -303,15 +297,6 @@ header ul { width: 60%;
   background-color: #22aeac;
 }
 
-.sel_d {
-  width: 590px;
-  height: 420px;
-}
-
-.sel_e {
-  width: 590px;
-  height: 420px;
-}
 
 .books_2 {
   width: 1200px;
@@ -356,14 +341,21 @@ header ul { width: 60%;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: yellow;
+
 }
 
 .box_3 {
   width: 390px;
   height: 460px;
-  background-color: chocolate;
 }
+.box_3 a{display:flex; justify-content: center; align-items: center;
+font-size: 24px; font-family: 'Rufina', serif; margin-bottom: 30px;}
+
+.box_3 span {display:flex; justify-content: center; align-items: center;}
+
+.box_3 p{display:flex; justify-content: center; align-items: center;
+font-size: 14px; font-family: 'Rufina', serif; margin-top: 40px;}
+
 
 .sns {
   width: 100%;
