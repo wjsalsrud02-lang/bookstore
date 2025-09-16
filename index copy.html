@@ -347,33 +347,14 @@
     <div class="sel_b">
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/sela1.webp">
-            <div class="text2">
-              <h3><a href="#">Product Dummy Title</a><br><span>$79.00</span></h3>
-            </div>
-          </div>
-          <div class="swiper-slide"><img src="./img/sel9.webp"><div class="text2">
-              <h3><a href="#">Dummy Title</a><br><span class="sale">$39.00</span><span class="money" style="text-decoration: line-through; margin-left: 10px;  font-size: 12px;color:#909090 ;">$21.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/sel10.webp"><div class="text2">
-              <h3><a href="#">Dummy Product Name</a><br><span>$79.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/sel11.webp"><div class="text2">
-              <h3><a href="#">Dummy Title Here</a><br><span>$39.00</span><span class="money" style="text-decoration: line-through; margin-left: 10px;  font-size: 12px;color:#909090 ;">$60.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/ti1.webp"><div class="text2">
-              <h3><a href="#">Dummy Product Name</a><br><span>$29.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/sela2.webp"><div class="text2">
-              <h3><a href="#">Dummy Title Here</a><br><span>$55.00</span><span class="money" style="text-decoration: line-through; margin-left: 10px;  font-size: 12px;color:#909090 ;">$75.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/sel12.webp"><div class="text2">
-              <h3><a href="#">Dummy Text for Title</a><br><span>$55.00</span><span class="money" style="text-decoration: line-through; margin-left: 10px;  font-size: 12px;color:#909090 ;">$75.00</span> </h3>
-            </div></div>
-          <div class="swiper-slide"><img src="./img/sel13.webp"><div class="text2">
-              <h3><a href="#">Dummy Title Here</a><br><span>$50.00</span> </h3>
-            </div></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -441,17 +422,17 @@
     <div class="swiper-pagination"></div>
   </div></div></div>
     <div class="box2"><div class="category">CHILDREN'S BOOKS</div>
-  <div class="categories"><div class="swiper mySwiper4">
+  <div class="categories"><div class="swiper mySwiper6">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
     </div>
     <div class="swiper-pagination"></div>
   </div></div></div>
@@ -596,6 +577,18 @@
     });
 
     var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 1,
+      grid: {
+        rows: 3,
+      },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+     var swiper = new Swiper(".mySwiper6", {
       slidesPerView: 1,
       grid: {
         rows: 3,

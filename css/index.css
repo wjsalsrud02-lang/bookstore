@@ -45,6 +45,9 @@ a {
   object-fit: cover;
 }
 
+.swiper-button-next, .swiper-button-prev {opacity: 0; transition: opacity 0.3s ;}
+.mySwiper3:hover .swiper-button-next, .mySwiper3:hover .swiper-button-prev {opacity: 1;}
+
 .new {
   width: 1120px;
   height: 500px;
@@ -106,13 +109,43 @@ a {
 }
 
 .mySwiper2 img {
-  width: 165px;
-  height: 201px;
+  width: 150px;
+  height: 220px;
   display: block;
 }
 
 .mySwiper2 .text2 {
-  width: 135px;
+  width: 250px;
   text-align: center; /* 글씨 가운데 */
   margin-top: 8px;    /* 사진과 글씨 간격 */
+}
+
+.mySwiper4 img {
+  width: 90px;
+  height: 160px;
+}
+.mySwiper4 .text {
+  width: 180px;
+  text-align: center; 
+  margin-top: 8px;   
+}
+.mySwiper5 img {
+  width: 100px;
+  height: 100%;
+margin-left: 10px;
+}
+.mySwiper5 .text {
+  width: 180px;
+  text-align: center; 
+  margin-top: 8px;   
+}
+.mySwiper6 img {
+  width: 100px;
+  height: 100%;
+margin-left: 10px;
+}
+.mySwiper6 .text {
+  width: 180px;
+  text-align: center; 
+  margin-top: 8px;   
 }

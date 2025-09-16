@@ -159,7 +159,6 @@ padding-right: 5px;
   width: 100%;
   height: 55px;
   display: flex;
-  position: fixed;
   justify-content: center;
   align-items: center;
   background-color: #22aeac;
@@ -230,6 +229,8 @@ header ul { width: 60%;
   align-items: center;
 }
 
+.banner p {color: #fff; margin-left: 70px; font-size: 20px; font-family: 'Rufina', serif;}
+.banner span{font-size: 28px; font-weight: bold;}
 .sel {
   width: 100%;
   height: 580px;
@@ -237,20 +238,23 @@ header ul { width: 60%;
   margin: 80px 0;
   justify-content: center;
   gap: 15px;
+  font-family: 'Rufina', serif;;
 }
 
 .sel_a {
   width: 770px;
   height: 580px;
+  font-weight: bold;
 
 }
 
 .sel_b {
-  width: 385px;
+  width: 500px;
   height: 580px;
-
 }
 
+.sel_b a{height:40px; font-size: 15px; font-family: 'Rufina', serif;}
+.sel_b span{font-size: 13px; font-family: 'Rufina', serif; color: #22aeac;}
 
 .feature {
   width: 1200px;
@@ -302,7 +306,7 @@ header ul { width: 60%;
 
 .books_2 {
   width: 1200px;
-  height: 390px;
+  height: 520px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -316,13 +320,18 @@ header ul { width: 60%;
 
 .box2 {
   width: 285px;
-  height: 130px;
+  height: 520px;
   grid-template-columns: repeat(4, 1fr);
   /* 4열 */
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
   /* 3행 */
   background-color: hotpink;
+  flex-wrap: wrap;
 }
+
+.category {width: 270px; height:20px; margin-bottom: 15px; font-size: 18px; font-family: 'Rufina', serif; font-weight: 700;}
+
+.categories {width: 285px; height: 485px; background-color: chartreuse;}
 
 .banner_2 {
   width: 100%;
