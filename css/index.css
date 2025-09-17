@@ -48,59 +48,43 @@ a {
 .swiper-button-next, .swiper-button-prev {opacity: 0; transition: opacity 0.3s ;}
 .mySwiper3:hover .swiper-button-next, .mySwiper3:hover .swiper-button-prev {opacity: 1;}
 
-.new {
+.new{
   width: 1120px;
   height: 500px;
   margin: 0 auto;
+   display: flex;
+  flex-direction: column; /* 세로 배치 */
 }
 
-.new2 {
-  width: 100%;
-  height: 100%;
+.new .swiper-slide {
   display: flex;
-  justify-content: start;
-  ;
-  margin: 0 auto;
+  flex-direction: column; /* 세로 배치 */
+  align-items: center;    /* 가운데 정렬 */
+}
+
+.new img {
+  width: 150px;
+  height: 220px;
+  display: block;
+}
+
+.new a{ width: 260px;
+  text-align: center; height:40px; font-size: 18px; font-family: 'Rufina', serif;}
+.new span{font-size: 16px; margin-top: 8px; font-family: 'Rufina', serif; color: #22aeac;}
+
+.new2 {
+  width:750px;
+  height: 600px;
 }
 
 .new2 img {
   display: block;
   width: 40%;
   height: 60%;
-  object-fit: cover;
-  object-position: right;
 }
 
-.new2 .swiper {
-  align-items: center;
-  display: flex;
-}
-
-
-.new2 .swiper .text {
-  width: 100%;
-  text-align: right;
-  margin-right: 30px;
-}
-
-.new2 .swiper .text a {
-  font-size: 50px;
-  padding: 30px 0;
-}
-
-.new2 .swiper .text a:hover {
-  transition: .3s;
-  color: #22aeac;
-}
-
-.new2 .swiper .text span {
-  font-size: 28px;
-}
-
-.new2 .swiper .text p {
-  font-size: 16px;
-  padding: 30px 0;
-}
+.new2 a{ font-size:40px; font-weight: 700; font-family: 'Rufina', serif;}
+.new2 span{font-size: 16px; font-family: 'Rufina', serif;}
 
 .mySwiper2 .swiper-slide {
   display: flex;

@@ -65,10 +65,11 @@ try {
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
-            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+            boxElements[i].innerHTML=`
             <div class="text2">
-              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
-            </div>`
+              <h3><a href="#">${doc.title}</a><br><span>${doc.contents}</span></h3>
+            </div> 
+            <img src="${doc.thumbnail}">`
         }
 
     } catch (error) {
