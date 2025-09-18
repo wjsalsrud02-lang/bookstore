@@ -34,7 +34,7 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[0];
+            const doc = data.documents[4];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
@@ -50,7 +50,7 @@ try {
 
 
 try {
-        const querys = ["자바스크립트", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
+        const querys = ["한강", '꽃', '정원', '파리', '경제','사과','커피', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -61,13 +61,13 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[0];
+            const doc = data.documents[5];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
             boxElements[i].innerHTML=`
             <div class="text2">
-              <h3><a href="#">${doc.title}</a><br><span>${doc.contents}</span></h3>
+              <h3><a href="#">${doc.title}</a><br><br><span>${doc.contents}</span></h3>
             </div> 
             <img src="${doc.thumbnail}">`
         }
@@ -101,8 +101,9 @@ try {
     } catch (error) {
         console.log('에러발생', error);
     }
-try {
-        const querys = ["자바스크립트", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
+
+    try {
+        const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -113,25 +114,14 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[2];
+            const doc = data.documents[4];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
-            // <img>
-            const img = document.createElement("img");
-            img.src = doc.thumbnail;
-            boxElements[i].appendChild(img);
-
-            // <h3> 제목
-            const h3 = document.createElement("h3");
-            h3.textContent = doc.title;
-            boxElements[i].appendChild(h3);
-
-            // <h6> 저자
-            const h6 = document.createElement("h6");
-            h6.textContent = doc.authors;
-            boxElements[i].appendChild(h6);
-          
+            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+            <div class="text2">
+              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
+            </div>`
         }
 
     } catch (error) {
@@ -139,7 +129,7 @@ try {
     }
 
     try {
-        const querys = ["자바스크립트", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
+        const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -150,33 +140,22 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[3];
+            const doc = data.documents[4];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
-            // <img>
-            const img = document.createElement("img");
-            img.src = doc.thumbnail;
-            boxElements[i].appendChild(img);
-
-            // <h3> 제목
-            const h3 = document.createElement("h3");
-            h3.textContent = doc.title;
-            boxElements[i].appendChild(h3);
-
-            // <h6> 저자
-            const h6 = document.createElement("h6");
-            h6.textContent = doc.authors;
-            boxElements[i].appendChild(h6);
-          
+            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+            <div class="text2">
+              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
+            </div>`
         }
 
     } catch (error) {
         console.log('에러발생', error);
     }
-    
+
     try {
-        const querys = ["자바스크립트", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
+        const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -187,31 +166,19 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[3];
+            const doc = data.documents[4];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
-            // <img>
-            const img = document.createElement("img");
-            img.src = doc.thumbnail;
-            boxElements[i].appendChild(img);
-
-            // <h3> 제목
-            const h3 = document.createElement("h3");
-            h3.textContent = doc.title;
-            boxElements[i].appendChild(h3);
-
-            // <h6> 저자
-            const h6 = document.createElement("h6");
-            h6.textContent = doc.authors;
-            boxElements[i].appendChild(h6);
-          
+            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+            <div class="text2">
+              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
+            </div>`
         }
 
     } catch (error) {
         console.log('에러발생', error);
     }
-
 }
 
 

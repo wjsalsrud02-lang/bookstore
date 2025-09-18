@@ -112,8 +112,6 @@ header>.container {
   width: 300px;
   height: 50px;
   display: inline-block;
-  /* justify-content: left;
-  align-items: center; */
   position: relative;
 }
 
@@ -315,7 +313,7 @@ header ul { width: 60%;
   /* 가운데 정렬 */
   gap: 0 20px;
   /* row-gap:30px, column-gap:20px */
-  background-color: coral;
+
 }
 
 .box2 {
@@ -325,17 +323,27 @@ header ul { width: 60%;
   /* 4열 */
   grid-template-rows: repeat(1, auto);
   /* 3행 */
-  background-color: hotpink;
   flex-wrap: wrap;
 }
 
 .category {width: 270px; height:20px; margin-bottom: 15px; font-size: 18px; font-family: 'Rufina', serif; font-weight: 700;}
 
-.categories {width: 285px; height: 485px; background-color: chartreuse;}
+.categories {width: 285px; height: 485px;}
+.categories2 {width: 285px; height: 485px; display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;  /* 가로 중앙 정렬 */
+  gap: 40px;            /* 요소들 간격 */
+  text-align: center;   /* 텍스트 중앙 정렬 */ background-color: #22aeac; font-family: 'Rufina', serif;}
+.categories2 h2 {margin-top: 60px; font-size: 22px; color: #fff;}
+.categories2 p {color: #fff;}
+.categories2 input{padding: 20px; border: none; font-size: 15px; background-color: #D1D1D1;}
+.categories2 button {margin: 28px 0 0; padding:15px 25px; border: none; border-radius: 5px; font-size: 16px; font-weight: 600;}
 
 .banner_2 {
   width: 100%;
   height: 590px;
+  margin-top: 80px;
   margin-bottom: 80px;
   background-image: url('https://koparion.myshopify.com/cdn/shop/files/11.jpg?v=1613706545');  background-size:cover;
 
