@@ -102,6 +102,32 @@ try {
         console.log('에러발생', error);
     }
 
+     try {
+        const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑','컴퓨터','영어','나무','치과','게임','한글','체육'];
+
+        for (let i=0; i<querys.length; i++) {
+            const data = await fetchBooks(querys[i]);
+            console.log(data);
+
+            // .box 요소 전체 선택
+            const boxElements = document.querySelectorAll(".mySwiper3 .swiper-slide");
+            console.log(boxElements)
+
+            // documents 데이터를 각 box에 대응하여 렌더링            
+            const doc = data.documents[4];
+
+            if (!doc) return; // 데이터가 부족할 경우 생략
+
+            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+            <div class="text2">
+              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
+            </div>`
+        }
+
+    } catch (error) {
+        console.log('에러발생', error);
+    }
+
     try {
         const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
 
@@ -153,8 +179,7 @@ try {
     } catch (error) {
         console.log('에러발생', error);
     }
-
-    try {
+     try {
         const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
@@ -179,6 +204,8 @@ try {
     } catch (error) {
         console.log('에러발생', error);
     }
+
+   
 }
 
 

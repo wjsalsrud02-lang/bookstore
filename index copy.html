@@ -57,14 +57,6 @@
           <div class="minibox">
             <li><a href="#">HOME<img src="./img/arrow-down (1).png"
                   style="width: 15px; height:15px; margin-left: 10px;"></a>
-              <!-- <ul class="submenu_b">
-                <li>옵션 1</li>
-                <li>옵션 2</li>
-                <li>옵션 3</li>
-                <li>옵션 4</li>
-                <li>옵션 5</li>
-                <li>옵션 6</li>
-              </ul> -->
             </li>
           </div>
           <div class="minibox">
@@ -158,8 +150,12 @@
 
             <p class="slider-sale">
 
-             
+              <span class="sale1">-20%</span>
 
+
+              <span class="sale2">
+                <strong>£80.00</strong>
+                £60.0
             </p>
 
             <a href="/collections/all">Shop now!</a>
@@ -230,6 +226,7 @@
   <!-- </div> -->
 
   <div class="banner">
+    <img src="./img/banner.webp">
     <p>G. Meyer Books & Spiritual Traveler Press<br>
       <span>Sale up to 30% off</span>
     </p>
@@ -304,15 +301,31 @@
   </div>
 
   <div class="books">
-    <div class="box">1</div>
-    <div class="box">2</div>
-    <div class="box">3</div>
-    <div class="box">4</div>
-    <div class="box">5</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
+    <div class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
+
+  </div>
+
 
   <div class="sel_2">
     <div class="sel_d"><a href="/collections/all">
@@ -388,7 +401,8 @@
       <div class="categories2">
         <h2>SIGN UP FOR SEND NEWSLETTER</h2>
         <p>You can be always up to date with our company new!</p>
-        <input class="input_text" type="email" name="contact[email]" id="email" value placeholder="email@example.com" autocorrect="off" autocapitalize="off">
+        <input class="input_text" type="email" name="contact[email]" id="email" value placeholder="email@example.com"
+          autocorrect="off" autocapitalize="off">
         <button type="submit" name="commit" id="Subscribe">Send Email</button>
       </div>
     </div>
@@ -398,7 +412,7 @@
   <div class="banner_2">
 
     <!-- Swiper -->
-    <div class="swiper mySwiper3">
+    <div class="swiper mySwiper7">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="quotes">
@@ -515,6 +529,18 @@
 
     var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 4,
       grid: {
         rows: 2,
       },

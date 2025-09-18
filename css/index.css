@@ -106,6 +106,28 @@ a {
   margin-top: 8px;    /* 사진과 글씨 간격 */
 }
 
+
+.mySwiper3 .swiper-slide {
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  align-items: center;    /* 가운데 정렬 */
+}
+
+.mySwiper3 img {
+  width: 170px;
+  height: 240px;
+  display: block;
+}
+
+.mySwiper3 .text2 {
+  width: 300px;
+  text-align: center; /* 글씨 가운데 */
+  margin-top: 8px;    /* 사진과 글씨 간격 */
+}
+
+.mySwiper3 a {font-size: 18px; color: #333;}
+.mySwiper3 span {font-size: 16px; color: #22aeac;}
+
 .mySwiper4 .swiper-slide {display:flex; justify-content: space-between;}
 .mySwiper4 img {
   width: 120px;

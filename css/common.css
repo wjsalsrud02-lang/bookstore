@@ -197,6 +197,7 @@ header ul { width: 60%;
 .top_main {width:400px; display: flex;}
 .top_sub {float: right;}
 
+
 .par div {
   width: 1200px;
   margin: 0 auto;
@@ -222,13 +223,25 @@ header ul { width: 60%;
   height: 145px;
   margin: 0 auto;
   margin-top: 80px;
-  background: url("//koparion.myshopify.com/cdn/shop/files/5.jpg?v=1613706498") no-repeat center/cover;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* 부드럽게 확대 */
 }
 
-.banner p {color: #fff; margin-left: 70px; font-size: 20px; font-family: 'Rufina', serif;}
+.banner img:hover {
+  transform: scale(1.1); /* hover 시 확대 */
+}
+.banner p { position: absolute;   /* 이미지 위에 겹치게 */
+  color: #fff; margin-left: 70px; font-size: 20px; font-family: 'Rufina', serif;}
 .banner span{font-size: 28px; font-weight: bold;}
+
+
 .sel {
   width: 100%;
   height: 580px;
@@ -269,24 +282,8 @@ header ul { width: 60%;
 
 .books {
   width: 1200px;
-  height: 390px;
+  height: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  /* 여러 줄로 배치 */
-  justify-content: center;
-  /* 가운데 정렬 */
-  gap: 30px 20px;
-  /* row-gap:30px, column-gap:20px */
-  background-color: purple;
-}
-
-.box {
-  width: 285px;
-  height: 130px;
-  align-items: center;
-  justify-content: center;
-  background-color: hotpink;
 }
 
 .sel_2 {
@@ -299,6 +296,15 @@ header ul { width: 60%;
   background-image: url('https://koparion.myshopify.com/cdn/shop/files/7.jpg?v=1613706544');  background-size:cover;
 
 
+}
+
+.sel_2 img {
+  object-fit: cover;      /* 비율 유지하면서 꽉 채우기 */
+  transition: transform 0.5s ease;
+}
+
+.sel_2 img:hover {
+  transform: scale(0.96);  /* 마우스 올렸을 때 이미지 확대 */
 }
 
 
@@ -374,6 +380,7 @@ header ul { width: 60%;
   width: 390px;
   height: 460px;
   text-align: center;
+  overflow: hidden;
 }
 .box_3 a{display:flex; justify-content: center; align-items: center;
 font-size: 24px; font-family: 'Rufina', serif; margin-bottom: 30px;}
@@ -383,6 +390,14 @@ font-size: 24px; font-family: 'Rufina', serif; margin-bottom: 30px;}
 .box_3 p{display:flex; justify-content: center; align-items: center;
 font-size: 14px; font-family: 'Rufina', serif; margin-top: 40px;}
 
+.blog img {
+  object-fit: cover;      /* 비율 유지하면서 꽉 채우기 */
+  transition: transform 0.5s ease;
+}
+
+.blog img:hover {
+  transform: scale(1.07);  /* 마우스 올렸을 때 이미지 확대 */
+}
 
 .sns {
   width: 100%;
