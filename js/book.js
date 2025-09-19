@@ -38,11 +38,14 @@ try {
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
-            boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
+
+            boxElements[i].innerHTML=`<a href="./subindex.html">
+            <img src="${doc.thumbnail}">
             <div class="text2">
-              <h3><a href="#">${doc.title}</a><br><span>${doc.price}</span></h3>
-            </div>`
+              <h3>${doc.title}<br><span>${doc.price}</span></h3>
+            </div></a>`
         }
+
 
     } catch (error) {
         console.log('에러발생', error);
@@ -50,7 +53,7 @@ try {
 
 
 try {
-        const querys = ["한강", '꽃', '정원', '파리', '경제','사과','커피', '박완서','사랑'];
+        const querys = ["한강", '꽃', '정원', '파리', '경제','비','커피', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -67,9 +70,9 @@ try {
 
             boxElements[i].innerHTML=`
             <div class="text2">
-              <h3><a href="#">${doc.title}</a><br><br><span>${doc.contents}</span></h3>
+              <h3>${doc.title}<br><br><span>${doc.contents}</span></h3>
             </div> 
-            <img src="${doc.thumbnail}">`
+            <a href="#"><img src="${doc.thumbnail}"></a>`
         }
 
     } catch (error) {
@@ -78,6 +81,7 @@ try {
 
     try {
         const querys = ["꽃", '영화', '정원', '한강', '경제','사과','미술', '박완서','동화'];
+        
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -100,6 +104,7 @@ try {
 
     } catch (error) {
         console.log('에러발생', error);
+        
     }
 
      try {
@@ -166,7 +171,7 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[4];
+            const doc = data.documents[5];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 
@@ -180,7 +185,7 @@ try {
         console.log('에러발생', error);
     }
      try {
-        const querys = ["꽃", '강아지', '정원', '파리', '경제','사과','기욤뮈소', '박완서','사랑'];
+        const querys = ["꽃", '한강', '미술', '만화', '경제','사과','기욤뮈소', '박완서','사랑'];
 
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
@@ -191,7 +196,7 @@ try {
             console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링            
-            const doc = data.documents[4];
+            const doc = data.documents[6];
 
             if (!doc) return; // 데이터가 부족할 경우 생략
 

@@ -197,6 +197,12 @@ header ul { width: 60%;
 .top_main {width:400px; display: flex;}
 .top_sub {float: right;}
 
+.ww{width:500px; height: 400px;margin:130px 0 0 400px;}
+.slider-sale {width: 500px; height: 80px; justify-content: center; align-items: center; display: flex; gap:30px; margin-bottom: 20px;}
+.sale1{padding: 10px; border-radius: 5px; font-size: 34px; font-weight: 700; color:#fff; background-color: gold;}
+.s1 {text-decoration: line-through; font-size: 24px; color:#fff}
+.s2{font-size: 34px; color: orange;}
+.ww a {color: #fff; font-family: 'Open Sans', sans-serif;}
 
 .par div {
   width: 1200px;
@@ -240,7 +246,6 @@ header ul { width: 60%;
 .banner p { position: absolute;   /* 이미지 위에 겹치게 */
   color: #fff; margin-left: 70px; font-size: 20px; font-family: 'Rufina', serif;}
 .banner span{font-size: 28px; font-weight: bold;}
-
 
 .sel {
   width: 100%;

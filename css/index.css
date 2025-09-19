@@ -45,12 +45,10 @@ a {
   object-fit: cover;
 }
 
-.swiper-button-next, .swiper-button-prev {opacity: 0; transition: opacity 0.3s ;}
-.mySwiper3:hover .swiper-button-next, .mySwiper3:hover .swiper-button-prev {opacity: 1;}
 
 .new{
   width: 1120px;
-  height: 500px;
+  height: 400px;
   margin: 0 auto;
    display: flex;
   flex-direction: column; /* 세로 배치 */
@@ -65,11 +63,11 @@ a {
 .new img {
   width: 150px;
   height: 220px;
-  display: block;
+  margin: 0 auto;
 }
 
-.new a{ width: 260px;
-  text-align: center; height:40px; font-size: 18px; font-family: 'Rufina', serif;}
+.new h3{ width: 260px; margin-top: 20px;
+  text-align: center; font-size: 18px; font-family: 'Rufina', serif;}
 .new span{font-size: 16px; margin-top: 8px; font-family: 'Rufina', serif; color: #22aeac;}
 
 
@@ -81,12 +79,12 @@ a {
 .new2 img {
   margin-left: 40px ;
   display: block;
-  width: 40%;
-  height: 60%;
+  width: 160px;
+  height: 220px;
 }
 
-.new2 a{ font-size:40px; color: #22aeac; font-weight: 700; font-family: 'Rufina', serif;}
-.new2 span{font-size: 18px; font-family: 'Rufina', serif;}
+.new2 h3{width: 540px; font-size:30px; color: #22aeac; font-weight: 700; font-family: 'Rufina', serif;}
+.new2 span{font-size: 18px;color:#333; font-family: 'Rufina', serif;}
 
 .mySwiper2 .swiper-slide {
   display: flex;
@@ -105,7 +103,6 @@ a {
   text-align: center; /* 글씨 가운데 */
   margin-top: 8px;    /* 사진과 글씨 간격 */
 }
-
 
 .mySwiper3 .swiper-slide {
   display: flex;
@@ -130,8 +127,8 @@ a {
 
 .mySwiper4 .swiper-slide {display:flex; justify-content: space-between;}
 .mySwiper4 img {
-  width: 120px;
-  height: 160px;
+  width: 130px;
+  height: 170px;
 }
 .mySwiper4 .text2 {
 width: 55%; font-family: 'Rufina', serif;
@@ -141,8 +138,8 @@ width: 55%; font-family: 'Rufina', serif;
 
 .mySwiper5 .swiper-slide {display:flex; justify-content: space-between;}
 .mySwiper5 img {
-  width: 120px;
-  height: 160px;
+  width: 130px;
+  height: 170px;
 }
 .mySwiper5 .text2 {
 width: 55%; font-family: 'Rufina', serif;
@@ -152,8 +149,8 @@ width: 55%; font-family: 'Rufina', serif;
 
 .mySwiper6 .swiper-slide {display:flex; justify-content: space-between;}
 .mySwiper6 img {
-  width: 120px;
-  height: 160px;
+  width: 130px;
+  height: 170px;
 }
 .mySwiper6 .text2 {
 width: 55%; font-family: 'Rufina', serif;
