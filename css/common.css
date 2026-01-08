@@ -1,14 +1,10 @@
 @charset "utf-8";
-
-
 @font-face {
   font-family: 'Pretendard';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-display: swap;
 }
-
-
 @font-face {
   font-family: 'Pretendard';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
@@ -17,26 +13,8 @@
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-body {
-  font-family: 'Pretendard';
-}
-
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Pretendard';}
 .container {
   width: 1200px;
   height: 100%;
@@ -44,49 +22,16 @@ body {
 }
 
 /* header */
-header {
-  width: 100%;
-  height: 245px;
-}
-
-.header_a {
-  width: 100%;
-  height: 45px;
-  color: #fff;
-  background-color: #333333;
-}
-
-.header_a .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
- .header_a li::after {content: "|"; float: right; margin-right: -20px; }
-
-        li:last-child::after{content: "";}
-
-
-.lang {
-  width: 100px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mypage {
-  width: 40%;
-  height: 45px;
-}
-
-.mypage ul {
-  height: 100%;
-  float: right;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+header {width: 100%; height: 245px;}
+.header_a {width: 100%; height: 45px; color: #fff; background-color: #333333;}
+.header_a .container {display: flex; justify-content: space-between;}
+.header_a li::after {content: "|"; float: right; margin-right: -18px; }  
+li:last-child::after{content: "";}
+.lang {width: 100px; height: 45px; display: flex; justify-content: center; align-items: center;}
+.lang img{width: 15px; height:15px; margin-left: 10px;}
+.mypage {width: 40%; height: 45px;}
+.mypage ul { height: 100%; float: right; display: flex; justify-content: space-between; align-items: center;}
+ 
 
 .mypage a {
   color: #fff;
@@ -99,7 +44,7 @@ font-family: 'Rufina', serif;
 
 
 .mypage ul li a:hover {
-  color: #22aeac;}         /* 마우스를 올렸을 때 글자 색 */
+  color: #22aeac;}
 
 header>.container {
   height: 145px;
@@ -114,6 +59,8 @@ header>.container {
   display: inline-block;
   position: relative;
 }
+
+.search input {padding: 15px 47px 15px 17px ; border-radius: 5px; font-size: 16px; overflow: hidden; border: none; background-color:#EDEDED ;}
 
 .search button {
   border-radius: 5px;
@@ -163,8 +110,10 @@ padding-right: 5px;
   font-weight: bolder;
 }
 
-.minibox {width: 130px; height: 55px; display: flex;   justify-content: center;
-  align-items: center;}
+.minibox {width: 130px; height: 55px; display: flex;   justify-content: center; align-items: center;}
+
+.minibox img {width: 15px; height:15px; margin-left: 10px;}
+  
 
 .header_b nav {
   width: 1200px;
@@ -197,7 +146,7 @@ header ul { width: 60%;
 .top_main {width:400px; display: flex;}
 .top_sub {float: right;}
 
-.ww{width:500px; height: 400px;margin:130px 0 0 400px;}
+.ww{width:500px; height: 400px;margin:130px 0 0 100px;}
 .slider-sale {width: 500px; height: 80px; justify-content: center; align-items: center; display: flex; gap:30px; margin-bottom: 20px;}
 .sale1{padding: 10px; border-radius: 5px; font-size: 34px; font-weight: 700; color:#fff; background-color: gold;}
 .s1 {text-decoration: line-through; font-size: 24px; color:#fff}
