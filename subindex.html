@@ -16,8 +16,7 @@
     <header>
         <div class="header_a">
             <div class="container">
-                <div class="lang">USD<img src="./img/arrow-down.png"
-                        style="width: 15px; height:15px; margin-left: 10px;">
+                <div class="lang">USD<img src="./img/arrow-down.png">
                 </div>
                 <div class="mypage">
                     <ul>
@@ -31,8 +30,7 @@
 
         <div class="container">
             <div class="search">
-                <input type="search" placeholder="Search our store" style="padding: 15px 47px 15px 17px ; border-radius: 5px; font-size: 16px;
-         overflow: hidden; border: none; background-color:#EDEDED ;">
+                <input type="search" placeholder="Search our store">
                 <button>
                     <a href="#">
                         <img src="./img/magnifier.png" alt="돋보기">
@@ -44,8 +42,7 @@
                     alt="Koparion"></div>
             <div class="h_right">
                 <a href="#">
-                    <img src="./img/cart.png"
-                        style="width:33 px; height:33px; padding: 0 15px 0 0;" alt="장바구니">
+                    <img src="./img/cart.png">
                     My cart</a>
             </div>
         </div>
@@ -54,8 +51,7 @@
             <nav>
                 <ul>
                     <div class="minibox">
-                        <li><a href="#">HOME<img src="./img/arrow-down.png"
-                                    style="width: 15px; height:15px; margin-left: 10px;"></a>
+                        <li><a href="#">HOME<img src="./img/arrow-down.png"></a>
                         </li>
                     </div>
                     <div class="minibox">
@@ -81,9 +77,9 @@
     </header>
 
 
-    <section>
-        <h3>관련 도서</h3>
+<section>
 
+    <div class="sub_section">
         <div class="sub_box"></div>
 
         <table>
@@ -91,27 +87,22 @@
                 <td>판매가</td>
                 <td class="pricenum"></td>
             </tr>
-
             <tr>
                 <td>적립금혜택</td>
                 <td>38p</td>
             </tr>
-
             <tr>
                 <td>브랜드</td>
                 <td>피오피스토리</td>
             </tr>
-
             <tr>
                 <td>배송구분</td>
                 <td>업체배송</td>
             </tr>
-
             <tr>
                 <td>배송비</td>
-                <td>조건부무료배송</td>
+                <td>무료배송</td>
             </tr>
-
             <tr>
                 <td>수량</td>
                 <td>
@@ -124,7 +115,6 @@
                     </select>
                 </td>
             </tr>
-
             <tr>
                 <td colspan="2">
                     <button>바로 구매</button>
@@ -133,14 +123,13 @@
                     <button>조르기</button>
                 </td>
             </tr>
-
         </table>
+    </div>
 
-        <div class="contextbox"></div>
+    <div class="contextbox"></div>
 
-        <div id="tmpBox"></div>
-
-    </section>
+    <div id="tmpBox"></div>
+</section>
 
     <footer>
         <div class="container">
@@ -262,7 +251,7 @@
                 `
                 priceNum.textContent += price + "원";
 
-                contextBox.innerHTML = `<h6>${authors[0]}</h6>
+                contextBox.innerHTML = `<h3>${authors[0]}</h3>
                 <p>${contents}</p>
                 <span>자세히보기</span>
                 `
