@@ -28,16 +28,10 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".new_item .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)    
             const doc = data.documents[4];
-
-            if (!doc) return; // 데이터가 부족할 경우 생략
-
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<a href="./subindex.html">
             <img src="${doc.thumbnail}">
@@ -58,15 +52,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".new_item2 .swiper-slide");
             console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
             const doc = data.documents[5];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`
             <div class="text2">
@@ -86,15 +76,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".mySwiper2 .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)           
             const doc = data.documents[1];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
             <div class="text2">
@@ -113,15 +99,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".mySwiper3 .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)        
             const doc = data.documents[4];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
             <div class="text2">
@@ -139,15 +121,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".mySwiper4 .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)       
             const doc = data.documents[4];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
             <div class="text2">
@@ -165,15 +143,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".mySwiper5 .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)   
             const doc = data.documents[5];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
             <div class="text2">
@@ -190,15 +164,11 @@ try {
         for (let i=0; i<querys.length; i++) {
             const data = await fetchBooks(querys[i]);
             console.log(data);
-
-            // .box 요소 전체 선택
             const boxElements = document.querySelectorAll(".mySwiper6 .swiper-slide");
-            console.log(boxElements)
-
-            // documents 데이터를 각 box에 대응하여 렌더링            
+            console.log(boxElements)       
             const doc = data.documents[6];
 
-            if (!doc) return; // 데이터가 부족할 경우 생략
+            if (!doc) return;
 
             boxElements[i].innerHTML=`<img src="${doc.thumbnail}">
             <div class="text2">

@@ -312,7 +312,8 @@ header ul {
 .category {
   width: 270px;
   height: 20px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
   font-family: 'Rufina', serif;
   font-weight: 700;
